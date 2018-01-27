@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+public extension String {
+    var isValidPassword: Bool {
+        return count > 8
+    }
+}

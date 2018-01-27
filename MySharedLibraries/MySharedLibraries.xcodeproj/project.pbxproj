@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49C9870A201D339E004EED48 /* String+PasswordValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C98709201D339E004EED48 /* String+PasswordValidation.swift */; };
 		49FF63E1201D32FC00CFA4C1 /* MySharedLibraries.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49FF63D7201D32FC00CFA4C1 /* MySharedLibraries.framework */; };
-		49FF63E6201D32FC00CFA4C1 /* MySharedLibrariesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FF63E5201D32FC00CFA4C1 /* MySharedLibrariesTests.swift */; };
+		49FF63E6201D32FC00CFA4C1 /* StringPasswordValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FF63E5201D32FC00CFA4C1 /* StringPasswordValidationTests.swift */; };
 		49FF63E8201D32FC00CFA4C1 /* MySharedLibraries.h in Headers */ = {isa = PBXBuildFile; fileRef = 49FF63DA201D32FC00CFA4C1 /* MySharedLibraries.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -23,11 +24,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49C98709201D339E004EED48 /* String+PasswordValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+PasswordValidation.swift"; sourceTree = "<group>"; };
 		49FF63D7201D32FC00CFA4C1 /* MySharedLibraries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MySharedLibraries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FF63DA201D32FC00CFA4C1 /* MySharedLibraries.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySharedLibraries.h; sourceTree = "<group>"; };
 		49FF63DB201D32FC00CFA4C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49FF63E0201D32FC00CFA4C1 /* MySharedLibrariesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySharedLibrariesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		49FF63E5201D32FC00CFA4C1 /* MySharedLibrariesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySharedLibrariesTests.swift; sourceTree = "<group>"; };
+		49FF63E5201D32FC00CFA4C1 /* StringPasswordValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringPasswordValidationTests.swift; sourceTree = "<group>"; };
 		49FF63E7201D32FC00CFA4C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 			children = (
 				49FF63DA201D32FC00CFA4C1 /* MySharedLibraries.h */,
 				49FF63DB201D32FC00CFA4C1 /* Info.plist */,
+				49C98709201D339E004EED48 /* String+PasswordValidation.swift */,
 			);
 			path = MySharedLibraries;
 			sourceTree = "<group>";
@@ -80,7 +83,7 @@
 		49FF63E4201D32FC00CFA4C1 /* MySharedLibrariesTests */ = {
 			isa = PBXGroup;
 			children = (
-				49FF63E5201D32FC00CFA4C1 /* MySharedLibrariesTests.swift */,
+				49FF63E5201D32FC00CFA4C1 /* StringPasswordValidationTests.swift */,
 				49FF63E7201D32FC00CFA4C1 /* Info.plist */,
 			);
 			path = MySharedLibrariesTests;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					49FF63D6201D32FC00CFA4C1 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					49FF63DF201D32FC00CFA4C1 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C9870A201D339E004EED48 /* String+PasswordValidation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49FF63E6201D32FC00CFA4C1 /* MySharedLibrariesTests.swift in Sources */,
+				49FF63E6201D32FC00CFA4C1 /* StringPasswordValidationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		49FF63EC201D32FC00CFA4C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = travisTests.MySharedLibraries;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +362,7 @@
 		49FF63ED201D32FC00CFA4C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +384,7 @@
 		49FF63EF201D32FC00CFA4C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6TE2DQ3676;
 				INFOPLIST_FILE = MySharedLibrariesTests/Info.plist;
@@ -390,6 +399,7 @@
 		49FF63F0201D32FC00CFA4C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6TE2DQ3676;
 				INFOPLIST_FILE = MySharedLibrariesTests/Info.plist;
